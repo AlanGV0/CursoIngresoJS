@@ -14,7 +14,7 @@ function sumar()
 	var conversion1 = parseInt(numero1);
 	var conversion2 = parseInt(numero2);
 	
-	alert(conversion1 + conversion2);
+	alert("Tu respuesta es: " conversion1 + conversion2);
 
 
 }
