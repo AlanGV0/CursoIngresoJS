@@ -16,11 +16,11 @@ function SacarResto()
 	dividendo = parseInt(document.getElementById("txtIdNumeroDividendo").value);
 	divisor	  = parseInt(document.getElementById("txtIdNumeroDivisor").value);
 
-	dividendo = document.getElementById("txtIdNumeroDividendo").value;
-	divisor = document.getElementById("txtIdNumeroDivisor").value;
-
 	resultado = (dividendo % divisor);
 
-	alert("El resto es " + resultado)
+	console.log(dividendo % divisor );
+
+	alert("El resto es " + resultado);
+
 }
 

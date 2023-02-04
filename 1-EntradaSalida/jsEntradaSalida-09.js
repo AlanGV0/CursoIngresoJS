@@ -1,21 +1,56 @@
 /*
-Debemos lograr tomar el importe por ID ,
-transformarlo a entero (parseInt), luego
-mostrar el importe con un aumento del 10 %
-en el cuadro de texto "RESULTADO".*/
+9 BIS : Debemos lograr tomar el importe por ID ,transformarlo a entero (parseInt), 
+y tambien pedirle al usuario mediante una entrada de datos cual es el aumento a 
+realizar, y luego mostrar el importe con el aumento en el TextBox"RESULTADO".*/
+
+// Declaramos variables
 function mostrarAumento()
 {
+	var importe;
+	var ingresoAumento;
+	var nuevoImporte;
+	var aumento;
 
-	var sueldo
-	var nuevoImporte
-	var aumento
+// Tomamos los datos por ID
 
-	sueldo = parseFloat(document.getElementById("txtIdSueldo").value);
+	importe = document.getElementById("txtIdSueldo").value;
 
-	aumento = sueldo * 10 / 100;
+// Pedimos datos al usuario
+
+	ingresoAumento = prompt("Ingrese su Aumento");
+
+// Parseamos
+
+	importe = parseFloat(importe);
+	ingresoAumento = parseFloat(ingresoAumento);
 	
-	nuevoImporte = sueldo + aumento;
 
-	document.getElementById("txtIdResultado").value = nuevoImporte
-	
+// Realizamos el aumento
+
+	aumento = importe * ingresoAumento/100
+	nuevoImporte = importe + ingresoAumento;
+
+// Mostramos en TextBox
+
+	document.getElementById("txtIdResultado").value = nuevoImporte;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
